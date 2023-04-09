@@ -43,3 +43,6 @@ set_prop(mi_thermald, vendor_thermal_normal_prop)
 
 # Allow mi_thermald to create wakelock
 wakelock_use(mi_thermald)
+
+# Allow Parts write thermals
+allow system_app sysfs_thermal:file rw_file_perms;
