@@ -169,3 +169,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SEPolicy
 -include device/xiaomi/alioth/sepolicy/alioth-sepolicy.mk
+
+# Properties
+TARGET_SYSTEM_PROP += device/xiaomi/alioth/system.prop
