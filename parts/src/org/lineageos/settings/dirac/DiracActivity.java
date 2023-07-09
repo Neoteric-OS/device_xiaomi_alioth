@@ -19,17 +19,18 @@ package org.lineageos.settings.dirac;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
+import com.android.settingslib.collapsingtoolbar.R;
 
 public class DiracActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG_DIRAC = "dirac";
+	private static final String TAG_DIRAC = "dirac";
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                new DiracSettingsFragment(), TAG_DIRAC).commit();
-    }
-}
+		getFragmentManager().beginTransaction().replace(R.id.content_frame,
+				new DiracSettingsFragment(), TAG_DIRAC).commit();
+	
+		}
+	}
