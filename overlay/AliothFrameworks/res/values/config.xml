@@ -317,6 +317,9 @@
         <item>95000</item>
         <item>100000</item>
     </integer-array>
+    
+    <!-- Auto-brightness sensor type string -->
+        <string name="config_displayLightSensorType">"android.sensor.light"</string>
 
     <!-- Array of ambient lux threshold values. This is used for determining hysteresis constraint
          values by calculating the index to use for lookup and then setting the constraint value
